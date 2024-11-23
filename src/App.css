@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+
+.weather-details-box {
+  display: flex; /* Flexbox for internal content alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 50vh; /* Full viewport height */
+  width: 50%; /* Box width */
+  margin: 5vh auto; /* Horizontally center the box itself */
+  border: 1px solid #0b0b0b; /* Optional: Border for debugging */
+  border-radius: 8px;
+  background-color: #808080;
+}
+
+.weather-details {
+  margin-top: 20px;
+  padding: 50px;
+  border: 1px solid #f6f1f1;
+  border-radius: 8px;
+  width : 80%;
+  height : 70%;
+  background-color: #e98d0c;
+}
+
+
+.weather-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-details p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
