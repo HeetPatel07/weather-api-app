@@ -1,66 +1,76 @@
 .App {
   text-align: center;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align content from the top */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Ensure the container takes up the full viewport height */
+  padding: 20px; /* Add some space around the content */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start; /* Align content from top */
+  font-size: calc(50px + 2vmin);
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Heading at the top with smaller font size */
+h1 {
+  font-size: 36px; /* Smaller heading size */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: black; /* Set color to black */
 }
 
-
-.weather-details-box {
-  display: flex; /* Flexbox for internal content alignment */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  height: 50vh; /* Full viewport height */
-  width: 50%; /* Box width */
-  margin: 5vh auto; /* Horizontally center the box itself */
-  border: 1px solid #0b0b0b; /* Optional: Border for debugging */
-  border-radius: 8px;
-  background-color: #808080;
+/* Increase the search box size */
+input[type="text"] {
+  width: 250px; /* Make input a bit wider */
+  padding: 10px; /* Add padding for better spacing */
+  font-size: 16px; /* Increase font size */
+  margin-bottom: 20px; /* Add space below search box */
 }
 
-.weather-details {
-  margin-top: 20px;
+/* Search button styling */
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px; /* Make button text larger */
+  margin-bottom: 20px; /* Add space below the button */
+}
+
+/* Center the weather details box below the search box */
+.weather-details{
+  margin-top: 100px;
   padding: 50px;
-  border: 1px solid #f6f1f1;
-  border-radius: 8px;
-  width : 80%;
-  height : 70%;
-  background-color: #e98d0c;
+  border: 1px solid #f8f5f5;
+  border-radius: 100px;
+  width: 60%;
+  height: auto; /* Adjust height to fit content */
+  color: black;
+  background-color: rgba(98, 97, 97, 0.4); /* Transparent background */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Centers the content inside */
+  align-items: center; /* Centers the content inside */
+  text-align: center; /* Center text */
 }
 
+.items-container{
+border-radius: 50%;
+border-color: aliceblue;
+align-items: center;
+color :white;
+}
 
+/* Weather details text styling */
 .weather-details h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -70,4 +80,3 @@
   font-size: 18px;
   margin: 5px 0;
 }
-
