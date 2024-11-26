@@ -40,5 +40,4 @@ A React application that fetches and displays real-time weather data using the O
 - OpenWeatherMap API
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
+This project is licensed under the MIT License 
