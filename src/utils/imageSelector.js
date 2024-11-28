@@ -19,6 +19,11 @@ const weatherBackgrounds = {
       return '/images/snowy.png'; // Path to snowy image
     } else if (condition.includes('clear')) {
       return '/images/sunny.png'; // Path to clear skies image
+    } else if (condition.includes('mist')) {
+      return '/images/mist.png'; // Path to clear skies image
+    } 
+    else if (condition.includes('smoke')) {
+      return '/images/smoke.png'; // Path to clear skies image
     } else if (condition.includes('cloud')) {
       return '/images/cloudy.png'; // Path to cloudy image
     } else if (condition.includes('rain')) {

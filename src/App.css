@@ -63,20 +63,29 @@ button {
   text-align: center; /* Center text */
 }
 
-.items-container{
-border-radius: 50%;
-border-color: aliceblue;
-align-items: center;
-color :white;
+.weather-details {
+  width: 100%;
+  border-collapse: collapse;
+}
+.weather-details-icon{
+  padding: 8px;
+  justify-content: center;
+  border: 0px solid #ddd;
 }
 
-/* Weather details text styling */
-.weather-details h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.weather-details th, .weather-details td {
+  padding: 8px;
+  text-align: left;
+  border: 0px solid #ddd;
 }
 
-.weather-details p {
-  font-size: 18px;
-  margin: 5px 0;
+@media (max-width: 600px) {
+  .weather-details th, .weather-details td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .weather-details th {
+    background-color: #f4f4f4;
+  }
 }
